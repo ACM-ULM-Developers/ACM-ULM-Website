@@ -1,12 +1,13 @@
-import React, { Component } from "react";
 
-import {
-    Switch,
+import React from 'react'
+
+import 
+    {Switch,
     Routes,
     Route,
     NavLink,
-    HashRouter
-  } from "react-router-dom";
+    HashRouter}
+   from "react-router-dom";
 
 
 /*import { render } from "react-dom";
@@ -18,16 +19,14 @@ import {
     HashRouter
 } from "react-router-dom";*/
 
-  import Home from "./Home";
-  import Stuff from "./Stuff";
-  import Contact from "./Contact";
+  import Home from "./pages/Home";
+  import Stuff from "./pages/Stuff";
+  import Contact from "./pages/Contact";
 
 
-
-class Main extends Component {
-  render() {
-    return (
-        <HashRouter>
+const Main = () => {
+  return (
+    <HashRouter>
         <div>
           <h1 id = "initial">ACM <br /></h1>
           <h3 id = "second">University of Louisiana Monror</h3>
@@ -50,8 +49,7 @@ class Main extends Component {
           </div>
         </div>
         </HashRouter>
-    );
-  }
+  )
 }
- 
-export default Main;
+
+export default Main
