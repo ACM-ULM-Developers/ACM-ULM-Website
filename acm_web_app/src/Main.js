@@ -22,6 +22,8 @@ import {
   import Home from "./pages/Home";
   import Stuff from "./pages/Stuff";
   import Contact from "./pages/Contact";
+  import DiscordComm from "./pages/DiscordComm";
+  import Alumni from "./pages/Alumni";
 
 
 const Main = () => {
@@ -36,7 +38,8 @@ const Main = () => {
             <li><NavLink to="/stuff"> Academics </NavLink></li>
             <li><NavLink to="/contact"> Current Events </NavLink></li>
             <li><NavLink to="/contact"> Executive Members </NavLink></li>
-            <li><NavLink to="/contact"> ULM Discord Community </NavLink></li>
+            <li><NavLink to="/discordComm"> ULM Discord Community </NavLink></li>
+            <li><NavLink to="/alumni"> Alumni </NavLink></li>
 
 
           </ul>
@@ -45,6 +48,8 @@ const Main = () => {
             <Route exact path="/" component={Home}/>
             <Route path="/stuff" component={Stuff}/>
             <Route path="/contact" component={Contact}/>
+            <Route path="/discordComm" component={DiscordComm}/>
+            <Route path="/alumni" component={Alumni}/>
         
           </div>
         </div>

@@ -56,3 +56,88 @@ body {
   #home_content{
     background-color: green;
   }
+
+
+  .float-container1 {
+    border: 3px solid #fff;
+    padding: 20px;
+    display: inline-block;
+    width: 35%;
+    margin: 50px;
+    font-size: 200%;
+}
+
+.float-container2 {
+  border: 3px solid #fff;
+    padding: 20px;
+    display: inline-block;
+    width: 35%;
+    margin: 50px;
+    font-size: 200%;;
+}
+
+.float-child1 {
+    width: 50%;
+    height: 100px;
+    color: black;
+    float: left;
+    padding: 20px;
+    border: 2px solid brown;
+    margin: 50px;
+    background-color: gray;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.float-child2 {
+  width: 50%;
+  height: 100px;
+  color: black;
+  float: left;
+  padding: 20px;
+  border: 2px solid gray;
+  margin: 50px;
+  background-color: brown;
+  text-align: center;
+  padding-top: 75px;
+} 
+
+.float-child3 {
+  width: 50%;
+    height: 100px;
+    color: black;
+    float: left;
+    padding: 20px;
+    border: 2px solid gray;
+    margin: 50px;
+    background-color: brown;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.float-child4 {
+  width: 50%;
+  height: 100px;
+  color: black;
+  float: left;
+  padding: 20px;
+  border: 2px solid brown;
+  margin: 50px;
+  background-color: gray;
+  text-align: center;
+  padding-top: 75px;
+} 
+
+
+.float-container1 :hover {
+  background-color: black;
+  color: gold;
+}
+
+.float-container2 :hover {
+  background-color: black;
+  color: gold;
+}
+
+
+
