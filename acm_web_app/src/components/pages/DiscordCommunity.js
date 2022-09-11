@@ -1,7 +1,7 @@
 import React from 'react'
 
 //changed class based component into functional component
-const DiscordComm = () => {
+export default function DiscordCommunity(){
   return (
     
       <>  {/* using '<>' because we need to wrap the whole html inside a parent element. 
@@ -51,6 +51,4 @@ const DiscordComm = () => {
 
   )
 }
-
-export default DiscordComm
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 //changed class based component into functional component
-const Stuff = () => {
+export default function Stuff(){
   return (
     <div id = "inside_content">
 <h2>ACM</h2>
@@ -17,5 +17,4 @@ const Stuff = () => {
   )
 }
 
-export default Stuff
 

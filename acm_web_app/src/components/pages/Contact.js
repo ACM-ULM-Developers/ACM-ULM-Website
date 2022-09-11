@@ -2,7 +2,7 @@ import React from 'react'
 
 
 //changed class based component into functional component
-const Contact = () => {
+export default function Contact() {
   return (
     <div>
     <h2>Any Qusstion about ACM? </h2>
@@ -11,6 +11,4 @@ const Contact = () => {
     </div>
   )
 }
-
-export default Contact
 

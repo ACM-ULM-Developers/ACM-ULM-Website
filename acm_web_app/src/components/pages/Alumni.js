@@ -2,7 +2,7 @@ import React from 'react'
 
 
 //changed class based component into functional component
-const Alumni = () => {
+export default function Alumni(){
   return (
     
     <>  {/* using '<>' because we need to wrap the whole html inside a parent element. 
@@ -53,6 +53,4 @@ const Alumni = () => {
 
   )
 }
-
-export default Alumni
 

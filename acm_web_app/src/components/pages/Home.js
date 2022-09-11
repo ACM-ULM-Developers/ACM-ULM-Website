@@ -1,7 +1,7 @@
 import React from 'react'
 
 //changed class based component into functional component
-const Home = () => {
+export default function Home(){
   return (
     <div id="home_content">
 <h2>HELLO</h2>
@@ -15,6 +15,4 @@ const Home = () => {
 </div>
   )
 }
-
-export default Home
 
