@@ -22,7 +22,7 @@ import {
 import Navbar from './components/layout/Navbar';
 import Home from "./components/pages/Home";
 import Stuff from "./components/pages/Stuff";
-import Contact from "./components/pages/Contact";
+import CurrentEvents from "./components/pages/CurrentEvents";
 import DiscordCommunity from "./components/pages/DiscordCommunity";
 import Alumni from "./components/pages/Alumni";
 
@@ -36,7 +36,7 @@ export default function App(){
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/stuff" component={Stuff}/>
-            <Route path="/contact" component={Contact}/>
+            <Route path="/contact" component={CurrentEvents}/>
             <Route path="/discordComm" component={DiscordCommunity}/>
             <Route path="/alumni" component={Alumni}/>
           </div>

@@ -209,6 +209,13 @@
   margin: 2em 0 0 0;
 }
 
+.leaderboard {
+  display: flex;
+  margin: 10rem auto;
+  background-color: rgb(240, 230, 230);
+  max-width: 30%;
+}
+
 body {
   background: #f5f7f8;
   color: black;
