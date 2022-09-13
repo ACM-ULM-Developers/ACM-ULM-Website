@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useCallback} from 'react'
 import {Calendar, dateFnsLocalizer} from "react-big-calendar"
 import format from "date-fns/format"
 import parse from 'date-fns/parse'
@@ -40,13 +40,20 @@ const events = [
   }
 ]
 
+const fx = ()=> {
+return(
+  <div>
+    Hello Tori World!
+  </div>
+)
+};
 
 
 const Contact = () => {
   return (
     <div>
 
-      <Calendar localizer={localizer} events ={events} startAccessor = "start" endAccessor="end" style = {{height:500, margin: "50px"}}/>
+      <Calendar localizer={localizer} events ={events} startAccessor = "start" endAccessor="end" onSelectEvent={fx} style = {{height:500, margin: "50px"}}/>
     </div>
   )
 }
