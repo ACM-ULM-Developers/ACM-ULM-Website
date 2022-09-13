@@ -211,9 +211,61 @@
 
 .leaderboard {
   display: flex;
+  flex-direction: column;
   margin: 10rem auto;
-  background-color: rgb(240, 230, 230);
   max-width: 30%;
+}
+.leaderboard .leaderboard--title {
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.leaderboard .leaderboard--interval {
+  display: flex;
+  margin: 1rem auto;
+  margin-bottom: 30px;
+}
+.leaderboard .leaderboard--interval .button {
+  margin: auto 10px;
+  padding: 5px 10px;
+  border-color: none;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.leaderboard .leaderboard--interval .button:hover {
+  background-color: aliceblue;
+}
+
+.users {
+  display: flex;
+  justify-content: space-around;
+}
+.users .users--panel {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+.users .users--panel .users--image {
+  max-width: 60px;
+  border-radius: 50%;
+}
+.users .users--panel .users--info {
+  margin: 5px;
+  padding: 0.5rem;
+}
+.users .users--panel .users--info .users--info--name {
+  font-size: 15px;
+  font-weight: 800;
+}
+.users .users--panel .users--info .users--info--location {
+  font-size: 13px;
+  font-weight: 550;
+}
+
+.usersScore {
+  padding-top: 2rem;
 }
 
 body {

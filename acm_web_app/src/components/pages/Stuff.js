@@ -16,24 +16,27 @@ export default function Stuff(){
   return (
     <div className = "leaderboard">
       <p className = "leaderboard--title">Leaderboard</p>
+
       <div className = "leaderboard--interval">
-        <button className = "leaderboard-buttton"> 7 Days </button>
-        <button className = "leaderboard-buttton"> 30 Days </button>
-        <button className = "leaderboard-buttton"> All-Time </button>
+        <button className = "button"> 7 Days </button>
+        <button className = "button"> 30 Days </button>
+        <button className = "button"> All-Time </button>
       </div>
 
       {users.map((item) => {
         return(
-          <div className = "leaderboard--users"> 
-            <div className = "leaderboard--userInfo">
-              <img src = {item.userImage} alt = "User profile pic" className='leaderboard--userImg' />
-              <div>
-                <p>{item.userName}</p>
-                <p>{item.userLocation}</p>
+          <div className = "users"> 
+            <div className = "users--panel">
+              <img src = {item.userImage} alt = "User profile pic" className='users--image' />
+              
+              <div className = "users--info">
+                <p className = "users--info--name">{item.userName}</p>
+                <p className = 'users--info--location'>{item.userLocation}</p>
               </div>
+            
             </div>
 
-            <div className = "leaderboard--userScore">
+            <div className = "usersScore">
               {item.userPoints}
             </div>
           </div>
