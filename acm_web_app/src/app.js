@@ -24,6 +24,7 @@ import Home from "./components/pages/Home";
 import Stuff from "./components/pages/Stuff";
 import CurrentEvents from "./components/pages/CurrentEvents";
 import DiscordCommunity from "./components/pages/DiscordCommunity";
+import ExecutiveMembers from "./components/pages/ExecutiveMembers";
 import Alumni from "./components/pages/Alumni";
 
 
@@ -38,6 +39,7 @@ export default function App(){
             <Route path="/stuff" component={Stuff}/>
             <Route path="/contact" component={CurrentEvents}/>
             <Route path="/discordComm" component={DiscordCommunity}/>
+            <Route path="/executiveMem" component={ExecutiveMembers} />
             <Route path="/alumni" component={Alumni}/>
           </div>
         </div>

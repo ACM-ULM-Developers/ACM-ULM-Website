@@ -13,7 +13,7 @@ export default function Navbar(){
                 <li><NavLink to ="/"> HOME </NavLink></li>
                 <li><NavLink to="/stuff"> ACADEMICS </NavLink></li>
                 <li><NavLink to="/contact"> CURRENT EVENTS </NavLink></li>
-                <li><NavLink to="/contact"> EXECUTIVE MEMBERS </NavLink></li>
+                <li><NavLink to="/executiveMem"> EXECUTIVE MEMBERS </NavLink></li>
                 <li><NavLink to="/discordComm"> ULM DISCORD COMMUNITY </NavLink></li>
                 <li><NavLink to="/alumni"> CS ALUMNI </NavLink></li>
             </ul>

@@ -169,7 +169,8 @@
 .card {
   min-height: 100%;
   background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -191,22 +192,112 @@
 }
 .card .background_cover {
   background-image: url("../images/discord.jpeg");
-  padding-bottom: 60%;
+  padding-bottom: 70%;
   background-size: cover;
   background-position: center center;
 }
 .card .item--description {
   margin: 1rem auto;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
   flex: 1; /* make p grow to fill available space*/
   line-height: 1.5;
 }
 .card h1 {
   font-size: 20px;
+  text-align: center;
   margin: 0;
   color: #333;
 }
 .card--btn {
   margin: 2em 0 0 0;
+}
+
+.card--btn_member {
+  margin: 0 2em 0 2em;
+  background-color: green;
+  color: white;
+  font-weight: 800;
+  font-size: larger;
+}
+.executive_members--title{
+  font-weight: 800;
+  font-size: 60px;
+  text-align: center;
+}
+
+.member_container {
+  display: grid;
+  margin: 5rem auto;
+  width: 90%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 40px;
+}
+@media only screen and (min-width: 600px) {
+  .member_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .member_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.card .background_cover_president {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C5603AQHKaKdF3zcRAQ/profile-displayphoto-shrink_800_800/0/1614119138299?e=1668643200&v=beta&t=CZV3X0JucWxlEMikX8KbdKYb1hu38khuaBDmN6P-8X0");
+  border-radius: 50%;
+  margin: 20% 10% 10% 20%;
+  padding-bottom: 70%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card .background_cover_vice_president {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQEivUUtl2npjQ/profile-displayphoto-shrink_800_800/0/1650573217613?e=1668643200&v=beta&t=B-00nj0mnw65dr9AYoyGs_WhaerKsthJhEEShKGbDRo");
+  border-radius: 50%;
+  margin: 20% 10% 10% 20%;
+  padding-bottom: 70%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card .background_cover_secretary {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQEivUUtl2npjQ/profile-displayphoto-shrink_800_800/0/1650573217613?e=1668643200&v=beta&t=B-00nj0mnw65dr9AYoyGs_WhaerKsthJhEEShKGbDRo");
+  border-radius: 50%;
+  margin: 20% 10% 10% 20%;
+  padding-bottom: 70%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card .background_cover_treasurer {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQFinHO1YxeL6w/profile-displayphoto-shrink_800_800/0/1614645019552?e=1668643200&v=beta&t=_FCZTPNWEiluyXESydgLFQy-Oh7xkslM2_EsZpgQx0M");
+  border-radius: 50%;
+  margin: 20% 10% 10% 20%;
+  padding-bottom: 70%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card .background_cover_faculty {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQH6d32k7NO-JA/profile-displayphoto-shrink_800_800/0/1519756637433?e=1668643200&v=beta&t=VpPg_GfrS9vHmAfaJdrbGwq1phk7GHHtY-nIu6UVkRU");
+  border-radius: 50%;
+  margin: 20% 10% 10% 20%;
+  padding-bottom: 70%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card .background_cover_pubRelation {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQH6d32k7NO-JA/profile-displayphoto-shrink_800_800/0/1519756637433?e=1668643200&v=beta&t=VpPg_GfrS9vHmAfaJdrbGwq1phk7GHHtY-nIu6UVkRU");
+  border-radius: 50%;
+  margin: 20% 10% 10% 20%;
+  padding-bottom: 70%;
+  background-size: cover;
+  background-position: center center;
 }
 
 .leaderboard {
