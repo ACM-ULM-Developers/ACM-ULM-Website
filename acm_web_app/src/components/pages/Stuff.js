@@ -9,7 +9,8 @@ export default function Stuff(){
           userName: user.name,
           userLocation: user.location,
           userImage: user.imgUrl,
-          userPoints: user.points
+          userPoints: user.points,
+          userID: user.position
       })
   })
 
@@ -27,6 +28,9 @@ export default function Stuff(){
         return(
           <div className = "users"> 
             <div className = "users--panel">
+
+              <p className = "users--position">{item.userID}</p>
+
               <img src = {item.userImage} alt = "User profile pic" className='users--image' />
               
               <div className = "users--info">

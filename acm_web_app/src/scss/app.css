@@ -305,6 +305,12 @@
   flex-direction: column;
   margin: 10rem auto;
   max-width: 30%;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 7px 9px 7px rgba(0, 0, 0, 0.3215686275);
+  color: #fff;
+  padding: 30px 30px 30px 0;
+  cursor: pointer;
 }
 .leaderboard .leaderboard--title {
   font-weight: 800;
@@ -326,7 +332,7 @@
   cursor: pointer;
 }
 .leaderboard .leaderboard--interval .button:hover {
-  background-color: aliceblue;
+  background-color: white;
 }
 
 .users {
@@ -337,6 +343,11 @@
   display: flex;
   justify-content: space-around;
   padding: 15px;
+}
+.users .users--panel .users--position {
+  margin-right: 30px;
+  padding-top: 20px;
+  font-weight: 500;
 }
 .users .users--panel .users--image {
   max-width: 60px;
@@ -353,6 +364,10 @@
 .users .users--panel .users--info .users--info--location {
   font-size: 13px;
   font-weight: 550;
+}
+.users:hover {
+  background-color: rgb(250, 237, 237);
+  color: black;
 }
 
 .usersScore {
