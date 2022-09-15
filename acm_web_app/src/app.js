@@ -26,6 +26,7 @@ import CurrentEvents from "./components/pages/CurrentEvents";
 import DiscordCommunity from "./components/pages/DiscordCommunity";
 import ExecutiveMembers from "./components/pages/ExecutiveMembers";
 import Alumni from "./components/pages/Alumni";
+import Footer from './components/layout/footer';
 
 
 export default function App(){
@@ -43,6 +44,7 @@ export default function App(){
             <Route path="/alumni" component={Alumni}/>
           </div>
         </div>
+        <Footer />
         </HashRouter>
   )
 }
