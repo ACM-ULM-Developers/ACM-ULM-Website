@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react'
+import React, {useState} from 'react'
 import {Calendar, dateFnsLocalizer} from "react-big-calendar"
 import format from "date-fns/format"
 import parse from 'date-fns/parse'
@@ -24,36 +24,58 @@ const events = [
     title: "ACM Workshop",
     allDay: true,
     start: new Date(2022, 8, 16),
-    end: new Date(2022,8,16)
+    end: new Date(2022,8,16),
+    description: "ACM WorkShop"
   },
   {
     title: "LoopBack",
     allDay: true,
     start: new Date(2022, 9, 16),
-    end: new Date(2022,9,16)
+    end: new Date(2022,9,16),
+    description: "ACM WorkShop"
   },
   {
     title: "Changing Interships",
     allDay: true,
     start: new Date(2022, 8, 16),
-    end: new Date(2022,8,16)
+    end: new Date(2022,8,16),
+    description: "ACM WorkShop"
   }
 ]
 
-const fx = ()=> {
-return(
-  <div>
-    Hello Tori World!
-  </div>
-)
-};
 
 
 const Contact = () => {
+
+  const [selectedEvent, setSelectedEvent] = useState(undefined);
+  const[modalState, setModalState] = useState(false);
+
+  const handleSelectedEvent = (event) =>{
+    setSelectedEvent(event)
+    setModalState(true)
+  }
+
+
+ 
+  const Modal =()=>{
+    //Function to hide the event description
+    const hide = ()=>{
+      setModalState(false)
+    }
+    return(
+      <div className = {`modal-${modalState == true ?'show': 'hide'}`} >
+       Event Description: Details will be published soon. 
+       <div> <button onClick={hide} >Hide Me</button></div>
+      </div>
+    )
+  }
+
+
+
   return (
     <div>
-
-      <Calendar localizer={localizer} events ={events} startAccessor = "start" endAccessor="end" onSelectEvent={fx} style = {{height:500, margin: "50px"}}/>
+      {selectedEvent && <Modal/>}
+      <Calendar  selectable localizer={localizer} events ={events} startAccessor = "start" endAccessor="end" onSelectEvent={handleSelectedEvent} style = {{height:500, margin: "50px"}}/>
     </div>
   )
 }
