@@ -627,4 +627,15 @@ cursor: pointer;
 body {
   background: #f5f7f8;
   color: black;
-}/*# sourceMappingURL=app.css.map */
+} /*# sourceMappingURL=app.css.map */
+
+
+/* For Calendar event description show and hide */
+.modal-show {
+  display: block;
+  
+}
+
+.modal-hide {
+  display: none;
+}

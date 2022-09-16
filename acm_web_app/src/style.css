@@ -138,3 +138,11 @@ body {
   background-color: black;
   color: gold;
 }
+
+.modal-show {
+  display: block;
+}
+
+.modal-hide {
+  display: none;
+}
