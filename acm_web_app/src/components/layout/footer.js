@@ -44,9 +44,8 @@ export default function Footer(){   // exporting as 'Footer' with capital 'F'
 					<p>+111 111 1111</p>
 				</div>
 
-				<div>
-                    
-				</div>
+				<div className="ulm-logo-footer">
+					</div>
 
 			</div>
 

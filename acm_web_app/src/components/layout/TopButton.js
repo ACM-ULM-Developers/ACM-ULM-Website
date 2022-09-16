@@ -1,4 +1,3 @@
-import { el } from "date-fns/locale";
 import React from "react";
 import { useEffect, useState } from "react";
 
@@ -19,22 +18,25 @@ function TopButton(){
     const scrollUp = () => {
         window.scrollTo ({
             top: 10,                     // takes the user to the 10 px from the top position
-            behavior: "smooth"
+            behavior: "smooth",
         })
     }
 
     return <div className="goTop">
     { TopButton && (
         <button style={{
-            //position: "fixed",
-            float: "right",
-            //bottom: "25px",
-            height: "50px ",
-            width: "50px",
-            fontSize: "50px"
+            height: "50px",
+            width:  "50px",
+            position: "absolute",
+            bottom: "47%",
+            right: "5%",
+            borderRadius: "50px",
+            fontSize: "30px",
+            opacity: "0.8",
         }}
+
         onClick = {scrollUp}>
-            ^                              {/* '^' up arrow symbol to direct the user*/}
+          <div id = "button"> ^ </div>    {/* '^' up arrow symbol to direct the user*/}
         </button>
     ) }    
     </div>

@@ -242,6 +242,18 @@ color: black;
 size: 80px;
 }
 
+.ulm-logo-footer {
+  background-image: url("../images/ulm_warhawks.png");
+  padding-bottom: 50%;  
+  /*background-size: cover;*/
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 250px;
+
+}
+
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
@@ -266,6 +278,20 @@ size: 80px;
 }
 
 /* footer elements ends here */
+
+
+/* go to top button */
+.goTop :hover{
+border-radius: 50px;
+opacity: 2;
+font-weight: 700;
+border-radius: 30px;
+padding: 2px;
+transition: 0.1s ease;
+box-shadow: 1px -1px  rgba(0,0.9,0,0);
+cursor: pointer;
+/*box-shadow: inset 0 0 0 1px black*/
+}
 
 
 .menu-button-container {

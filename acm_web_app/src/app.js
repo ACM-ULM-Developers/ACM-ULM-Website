@@ -2,10 +2,7 @@
 import React from 'react'
 
 import 
-    {Switch,
-    Routes,
-    Route,
-    NavLink,
+    { Route,
     HashRouter}
    from "react-router-dom";
 
@@ -27,6 +24,7 @@ import DiscordCommunity from "./components/pages/DiscordCommunity";
 import ExecutiveMembers from "./components/pages/ExecutiveMembers";
 import Alumni from "./components/pages/Alumni";
 import Footer from './components/layout/footer';
+import TopButton from './components/layout/TopButton';
 
 
 export default function App(){
