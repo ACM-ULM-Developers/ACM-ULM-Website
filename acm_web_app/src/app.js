@@ -2,10 +2,9 @@
 import React from 'react'
 
 import 
-    {Switch,
-    Routes,
+    {
     Route,
-    NavLink,
+    
     HashRouter}
    from "react-router-dom";
 
