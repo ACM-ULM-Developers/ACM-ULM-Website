@@ -71,7 +71,9 @@ class CsAlumni(models.Model):
 
 #Model to store discore links
 class DiscordLink(models.Model):
+    title = models.CharField(max_length=20)
     link = models.CharField(max_length=200)
+    description = models.CharField(max_length=200)
 
     def __str__(self):
-        return self.link
+        return self.title

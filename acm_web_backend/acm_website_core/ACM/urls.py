@@ -33,7 +33,7 @@ urlpatterns = [
     path('api/almuni/', CsAlmuniView.as_view(),name='almunis'),
 
     #path to get DiscordLinks
-    path('api/discord links/', DiscordLinkView.as_view(), name='discord_link')
+    path('api/discord_links/', DiscordLinkView.as_view(), name='discord_link')
 
 
 ]

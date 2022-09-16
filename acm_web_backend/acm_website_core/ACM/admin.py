@@ -19,13 +19,17 @@ class CsAlmuniAdmin(admin.ModelAdmin):
     model = CsAlumni
     list_display = ['first_name','middle_name','last_name']
 
+class DiscordLinkAdmin(admin.ModelAdmin):
+    model = DiscordLink
+    list_display = ['title','link']
+
 admin.site.register(Event,EventAdmin)
 admin.site.register(TopCoder,TopCoderAdmin)
 admin.site.register(HomePageFlyer)
 admin.site.register(Member,MemberAdmin)
 admin.site.register(PartnerSponser)
 admin.site.register(CsAlumni,CsAlmuniAdmin)
-admin.site.register(DiscordLink)
+admin.site.register(DiscordLink, DiscordLinkAdmin)
 
 
 
