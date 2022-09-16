@@ -5,6 +5,9 @@
 @import 'discordCommunity';
 @import 'academics';
 @import 'executiveMembers';
+@import 'homepage';
+@import 'academicDescription';
+
 body {
     background: $primary-background-color;
     color: $text-color;

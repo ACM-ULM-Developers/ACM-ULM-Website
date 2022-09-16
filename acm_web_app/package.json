@@ -30,9 +30,13 @@
     "eject": "react-scripts eject"
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
 >>>>>>> 03b2375e259e70e0ff192305a09f8fd89c4be42d
+=======
+  
+>>>>>>> 41c0ab8 (Edited homepage and academics page)
   "eslintConfig": {
     "extends": [
       "react-app",

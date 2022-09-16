@@ -1,0 +1,154 @@
+@mixin divStyle{
+    max-width: 50%;
+    margin: 5em auto;
+    padding: 2rem;
+    border-style: solid;
+    border-radius: 40px;;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+@mixin containerStyle{
+    display: grid;
+    margin: auto;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    text-align: center;
+
+    @media only screen and (min-width: 600px) {
+        & {
+            grid-template-columns: 1fr 1fr;
+        }  
+    }
+
+    @media only screen and (min-width: 900px) {
+        & {
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+        }
+    }
+}
+
+.descriptionContainer{
+
+    .leetcode_description{
+        @include divStyle();
+    }
+
+    .internship_description{
+        @include divStyle();
+    }
+
+    .find_internships{
+
+        &--title{
+            font-size: map-get($font_size, large);
+            font-weight: map-get($font_weight, bold);
+            padding-bottom: 50px;
+            text-align: center;
+            
+        }
+
+        & .internship_finder{
+           @include containerStyle();
+        
+        }
+    }
+    
+    .interns_ulm{
+        margin-top: 7rem;
+
+        .interns--title{
+            text-align: center;
+            font-size: map-get($font_size, large);
+            font-weight: map-get($font_weight, bold);
+            text-align: center;
+        }
+        
+        .interns--container{
+            @include containerStyle();
+            margin-top: 5rem;
+
+            & .interns{
+                min-height: 100%;
+                padding: 10px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #444;
+                position: relative;
+                top: 0;
+                transition: all .1s ease-in;
+                line-height: 2em;
+                font-weight: map-get($font_weight, bold);
+            
+                &:hover{
+                    top: -2px;
+                    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+                }
+
+                & .background_cover{
+                    background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQEivUUtl2npjQ/profile-displayphoto-shrink_800_800/0/1650573217613?e=1668643200&v=beta&t=B-00nj0mnw65dr9AYoyGs_WhaerKsthJhEEShKGbDRo");
+                    border-radius: 50%;
+                    margin: 20% 10% 10% 20%;
+                    padding-bottom: 70%;
+                    background-size: cover;
+                    background-position: center center;
+                }
+
+                & .interns--linkedin{
+                    padding: 5px;
+                    margin-top: 30px;
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+
+    .ulm_developers{
+        margin-top: 7rem;
+
+        &--title{
+            text-align: center;
+            font-size: map-get($font_size, large);
+            font-weight: map-get($font_weight, bold);
+            text-align: center;
+        }
+        
+        .ulm_developers--container{
+            @include containerStyle();
+            margin-top: 5rem;
+
+            & .acmDevelopers{
+                min-height: 100%;
+                padding: 10px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #444;
+                position: relative;
+                top: 0;
+                transition: all .1s ease-in;
+                line-height: 1.5em;
+                font-size: 20px;
+            
+                &:hover{
+                    top: -2px;
+                    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+                }
+
+                .background_cover{
+                    background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQEivUUtl2npjQ/profile-displayphoto-shrink_800_800/0/1650573217613?e=1668643200&v=beta&t=B-00nj0mnw65dr9AYoyGs_WhaerKsthJhEEShKGbDRo");
+                    border-radius: 50%;
+                    margin: 20% 10% 10% 20%;
+                    padding-bottom: 70%;
+                    background-size: cover;
+                    background-position: center center;
+                }
+            }
+        }
+    }
+}

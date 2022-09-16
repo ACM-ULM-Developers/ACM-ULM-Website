@@ -1,7 +1,15 @@
+.academics--title{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: map-get($font_size, large);
+    font-weight: map-get($font_weight, bold);
+}
+
 .leaderboard{
     display: flex;
     flex-direction: column;
-    margin: 10rem auto;
+    margin: 3rem auto;
     max-width: 30%;
     background-color: black;
     border-radius: 5px;
@@ -15,13 +23,13 @@
         font-weight: 800;
         font-size: 20px;
         text-align: center;
-        margin-bottom: 10px;
+        margin: 0 0 0 10%;
     }
 
     #{&}--interval{
         display: flex;
         margin: 1rem auto;
-        margin-bottom: 30px;
+        padding-left: 10%;
         
         & .button{
             margin: auto 10px;
@@ -86,4 +94,10 @@
 
 .usersScore{
     padding-top: 2rem;
+}
+
+@media(max-width: 1200px){
+    .leaderboard{
+        max-width: 100%;
+    }
 }

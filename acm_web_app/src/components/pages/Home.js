@@ -1,18 +1,71 @@
 import React from 'react'
 
-//changed class based component into functional component
 export default function Home(){
   return (
-    <div id="home_content">
-<h2>HELLO</h2>
-<p>
-    This is a <b>Home page.</b>< br/>
-    All the main contents goes here. <br />
-    This page is named as <b>Home.js</b>
-</p>
+    <div class = "home">
+      <div className = "home--title">
+        Welcome to The ACM Student Chapter at ULM
+      </div>
+      
+      <section class="section">
+        <div class="grid">
+          <div class="item item--medium"></div>
+          <div class="item item--large"></div>
+          <div class="item item--medium"></div>
+          <div class="item item--large"></div>
+          <div class="item item--full"></div>
+          <div class="item item--medium"></div>
+          <div class="item item--medium"></div>
+        </div>
+        </section>
 
-<p>ACM stands for "Association for Computing Machinary"</p>
-</div>
+      
+
+      <section className = "home--aboutACM">
+        <h2>ACM as a global community</h2>
+        <p className = "acm--description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia 
+          vel obcaecati tenetur rerum suscipit alias repudiandae laudantium ab. Qui 
+          veniam dolore perspiciatis sapiente itaque, incidunt quam accusamus numquam 
+          natus!
+
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia 
+          vel obcaecati tenetur rerum suscipit alias repudiandae laudantium ab. Qui 
+          veniam dolore perspiciatis sapiente itaque, incidunt quam accusamus numquam 
+          natus!
+        </p>
+      </section>
+
+      <section className = "home--aboutChapter">
+        <h2>Why ACM Student Chapter at ULM?</h2>
+        <p className = "chapter--description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia 
+          vel obcaecati tenetur rerum suscipit alias repudiandae laudantium ab. Qui 
+          veniam dolore perspiciatis sapiente itaque, incidunt quam accusamus numquam 
+          natus!
+
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia 
+          vel obcaecati tenetur rerum suscipit alias repudiandae laudantium ab. Qui 
+          veniam dolore perspiciatis sapiente itaque, incidunt quam accusamus numquam 
+          natus!
+        </p>
+      </section>
+
+      <section className = "home--hot_topic">
+        <h2>Hot Topic</h2>
+        <p className = "hot_topic--description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia 
+          vel obcaecati tenetur rerum suscipit alias repudiandae laudantium ab. Qui 
+          veniam dolore perspiciatis sapiente itaque, incidunt quam accusamus numquam 
+          natus!
+
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia 
+          vel obcaecati tenetur rerum suscipit alias repudiandae laudantium ab. Qui 
+          veniam dolore perspiciatis sapiente itaque, incidunt quam accusamus numquam 
+          natus!
+        </p>
+      </section>
+    </div>
   )
 }
 
