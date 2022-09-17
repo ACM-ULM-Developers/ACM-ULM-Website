@@ -46,7 +46,7 @@ class Member(models.Model):
     last_name = models.CharField(max_length=20)
     classification = models.CharField(max_length=20,choices=CLASSIFICATIONS)
     github_username = models.CharField(max_length=20)
-    leetcode_username = models.CharField(max_length=20)
+    leetcode_url = models.CharField(max_length=20,null=True,blank=True)
     linkedin_url = models.CharField(max_length=40)
     score = models.IntegerField(default=0)
 

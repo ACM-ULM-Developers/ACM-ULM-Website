@@ -1,7 +1,12 @@
+from urllib import request
 from django.shortcuts import render
 from rest_framework import generics
 from .models import *
 from .serializers import *
+import json
+import operator
+import datetime
+import requests
 
 
 # view to post event of Event Model
@@ -45,5 +50,57 @@ class DiscordLinkView(generics.ListAPIView):
     queryset = DiscordLink.objects.all()
     serializer_class = DiscordLinkSerializer
 
+#view to get topcoders for each classification of the member model
+class TopCoderView(generics.ListAPIView):
+    
+    # Retriving top 5 members from each classification as queryset
+    topFreshmen = Member.objects.filter(classification='Freshmen').order_by('-score')[:5]
+    topSophomre = Member.objects.filter(classification='Sophomore').order_by('-score')[:5]
+    topJunior = Member.objects.filter(classification='Junior').order_by('-score')[:5]
+    topSenior = Member.objects.filter(classification='Senior').order_by('-score')[:5]
+
+    
+    # append all classifications to queryset
+    queryset= topFreshmen|topSophomre|topJunior|topSenior
+    
+    serializer_class = TopCoderSerializer
+ 
+# Leaderboard view to update leetcode learderboard each month
+def update_leaderBoardView():
+        
+        #update leaderboard if today is the 17th of the month
+        if datetime.datetime.now().day == 17:
+        
+            #get all objects of member model
+            members = Member.objects.all()
+
+            for mem in members:
+
+                # consumimg current members information using API
+                response = requests.get("https://leetcode-stats-api.herokuapp.com/"+str(mem.leetcode_url))
+                
+                #convert json object to python dictionary
+                leetcodedata = json.loads(response.text)
+                
+                #Finally update the member score in database
+                Member.objects.filter(first_name=mem.first_name).update(score=leetcodedata["contributionPoints"])
+
+    
+    
+
+    
+
+
+
+
+            
+
+
+
+
+    
+
+
+    
 
 

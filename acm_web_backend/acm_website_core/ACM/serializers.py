@@ -44,3 +44,8 @@ class DiscordLinkSerializer(serializers.ModelSerializer):
     class Meta:
         model = DiscordLink
         fields = ['id','title','link','description']
+
+class TopCoderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Member
+        fields = ['first_name','middle_name','last_name','classification','score']
