@@ -42,7 +42,7 @@ export default function App(){
             <Route path="/alumni" component={Alumni}/>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
         </HashRouter>
   )
 }

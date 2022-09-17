@@ -11,7 +11,8 @@ export default function AcademicDescription(){
             position: intern.position,
             company: intern.company,
             timeInterval: intern.time,
-            linkedin: intern.linkedinLink
+            linkedin: intern.linkedinLink,
+            image: intern.image
         }
     })
 
@@ -102,7 +103,8 @@ export default function AcademicDescription(){
                     {interns.map((intern) => {
                         return(
                         <section className = "interns">
-                            <div className = "background_cover"></div>
+                            {/* <div className = "background_cover"></div> */}
+                            <img src = {intern.image} className = "interns--image"/>
                             <p className = "interns--name">{intern.name}</p>
                             <p className = "interns--classification">{intern.classification}</p>
                             <p className = "interns--position">{intern.position}</p>
@@ -126,7 +128,7 @@ export default function AcademicDescription(){
                     {developers.map((developer) => {
                     return(
                     <section className = "acmDevelopers">
-                            <div className = "background_cover"></div>
+                            <img src = {developer.image} className = "developers--image"/>
                             <p className = "developers--name">{developer.name}</p>
                             <p className = "developers--classification">{developer.classification}</p>
                             <p className = "developers--github">{developer.github}</p>

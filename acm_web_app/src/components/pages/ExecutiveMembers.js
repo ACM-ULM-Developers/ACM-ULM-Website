@@ -52,7 +52,7 @@ export default function ExecutiveMembers(){
             <div className = "background_cover_treasurer"></div>
               <article>
                 <h1>Treasurer</h1>
-                    <p class ="item--description">Jordyn Eaton<br/>Classification: Senior</p>
+                    <p class ="item--description">Jordyn Eaton<br/>Classification: Junior</p>
                   <button className = "card--btn_member">Know More</button>
               </article>
           </a>
