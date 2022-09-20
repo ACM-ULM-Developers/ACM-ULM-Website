@@ -22,3 +22,22 @@ ACM Student chapter at ULM's official website repo
 
     To run the React project.
     $ npm start
+
+## 2. For node version 17 or higher add the following script in package.json
+
+<br />
+
+    "scripts": {
+        "start": "react-scritps --openssl-legacy-provider start",
+        "build": "react-scripts --openssl-legacy-provider build"
+    }
+    
+   For node version lower than 17 add the following script in package.json
+
+   <br />
+
+    "scripts": {
+        "start": "react-scritps start",
+        "build": "react-scripts build"
+    }
+    
