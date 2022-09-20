@@ -22,9 +22,3 @@ ACM Student chapter at ULM's official website repo
 
     To run the React project.
     $ npm start
-
-## 2. Install webpack using following command
-
-<br />
-
-`npm install webpack`
