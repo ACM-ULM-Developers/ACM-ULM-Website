@@ -32,7 +32,7 @@ ACM Student chapter at ULM's official website repo
         "build": "react-scripts --openssl-legacy-provider build"
     }
     
-   For node version lower than 17 add the following script in package.json
+   ## For node version lower than 17 add the following script in package.json
 
    <br />
 
