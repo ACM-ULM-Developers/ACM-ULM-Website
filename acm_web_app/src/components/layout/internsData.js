@@ -94,7 +94,7 @@ export const internsData = [
         company: "DXC Technology",
         time: "June 2022 - August 2022",
         linkedinLink: "https://www.linkedin.com/in/nirajan-sangraula/",
-        image: "https://media-exp1.licdn.com/dms/image/C4E03AQFH_g11UPwlMg/profile-displayphoto-shrink_200_200/0/1614279311638?e=1668643200&v=beta&t=K11pKKh-UxyV4yN7Up2SRvizG_m7LSOvBLKVnvUNC_g",
+        image: "https://media-exp1.licdn.com/dms/image/D4E03AQFnyN8SMYNWYw/profile-displayphoto-shrink_800_800/0/1666047891019?e=1672272000&v=beta&t=BI4k5CZzE4E3XOZLAQ9fdc8B84X2gKc9yVCC1533XCY",
         companyLink: ""
     },
 
@@ -105,7 +105,7 @@ export const internsData = [
         company: "DXC Technology",
         time: "June 2022 - August 2022",
         linkedinLink: "https://www.linkedin.com/in/hemanta-pathak-073aaa191/",
-        image: "https://media-exp1.licdn.com/dms/image/D4E35AQHmG0D1wcQKDg/profile-framedphoto-shrink_200_200/0/1660853987860?e=1663948800&v=beta&t=mH7DkzxpP1-3xOZz41ERB48wG4MDGPi2YME7Kp2Ncco",
+        image: "https://media-exp1.licdn.com/dms/image/C4D03AQEXycJXMHTPTQ/profile-displayphoto-shrink_800_800/0/1641347165090?e=1672272000&v=beta&t=33cmmIu8XUUnGhVjsfNIyl29F83u3oXAcMqLobofkLk",
         companyLink: ""
     },
 
@@ -116,7 +116,7 @@ export const internsData = [
         company: "DXC Technology",
         time: "June 2022 - August 2022",
         linkedinLink: "https://www.linkedin.com/in/hemanta-pathak-073aaa191/",
-        image: "https://media-exp1.licdn.com/dms/image/C4E03AQHZwtbqBH4uwA/profile-displayphoto-shrink_200_200/0/1634841010298?e=1668643200&v=beta&t=bxgEmJb2HfEacBBeeCrw0WdBMppolKLrbcecV3m8AqE",
+        image: "https://media-exp1.licdn.com/dms/image/D4E03AQFNrlZjP9jZyg/profile-displayphoto-shrink_800_800/0/1666231489305?e=1672272000&v=beta&t=VUnhUFOaTkmpdFKPxWw9tK6Z2JMyyD-BWgvPnTkaZ_w",
         companyLink: ""
     }
 ];
