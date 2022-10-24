@@ -542,7 +542,7 @@
 }
 .home--hot_topic {
   max-width: 50%;
-  margin: auto;
+  margin: auto  auto 20px auto;
   padding: 2rem;
   border-style: solid;
   border-radius: 40px;
@@ -649,7 +649,7 @@
   display: block;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 200px;
   margin: 5px auto 30px auto;
 }
 .descriptionContainer .interns_ulm .interns--container .interns .interns--linkedin {
@@ -708,7 +708,7 @@
   display: block;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 200px;
   margin: 5px auto 30px auto;
 }
 

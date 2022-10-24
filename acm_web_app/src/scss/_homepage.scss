@@ -143,5 +143,6 @@
 
     &--hot_topic{
         @include divStyle();
+        margin-bottom: 10px;
     }
 }
