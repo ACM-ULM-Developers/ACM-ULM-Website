@@ -1,10 +1,9 @@
 @mixin divStyle{
-    max-width: 50%;
+    width: 70%;
     margin: 5em auto;
     padding: 2rem;
-    border-style: solid;
-    border-radius: 40px;;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    border-radius: 20px;;
+    box-shadow: 0 0 20px 8px #d0d0d0;
 }
 
 @mixin containerStyle{
@@ -33,10 +32,79 @@
 
     .leetcode_description{
         @include divStyle();
+        margin-top: 10em;
+
+        .leetcode--title{
+            font-size: 50px;
+            text-align: center;
+            font-weight: bolder;
+            margin-bottom: 1.5rem;
+            color: $primary-color;
+            width: 100%;
+        }
+      
+          .leetcode--body{
+            line-height: 4ch;
+            font-size: larger;
+        }
+    }
+
+    .roadmap--container{
+        margin-top: 10rem;
+
+        .roadmap--title{
+            text-align: center;
+            font-size: 60px;
+            font-weight: bolder;
+            color: $primary-color;
+            margin-bottom: 3rem;
+        }
+        .roadmap--diagram{
+        }
+    }
+
+    .register{
+        margin: 10em;
+    }
+    .register--title{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 900;
+        margin-bottom: 2em;
+        color: $primary-color;
+    }
+
+    .internship--title{
+        font-size: 50px;
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 1.5rem;
+        color: $primary-color
+    }
+  
+      .internship--body{
+        line-height: 4ch;
+        font-size: larger;
+        font-weight: 550;
     }
 
     .internship_description{
         @include divStyle();
+        margin: 10em auto;
+
+        .internship--title{
+            font-size: 50px;
+            text-align: center;
+            font-weight: bolder;
+            margin-bottom: 1.5rem;
+            color: $primary-color
+        }
+      
+          .internship--body{
+            line-height: 4ch;
+            font-size: larger;
+            font-weight: 550;
+        }
     }
 
     .find_internships{
@@ -44,25 +112,64 @@
         &--title{
             font-size: map-get($font_size, large);
             font-weight: map-get($font_weight, bold);
+            margin-bottom: 50px;
             padding-bottom: 50px;
-            text-align: center;
-            
+            text-align: center;  
+            color: $primary-color;
         }
 
         & .internship_finder{
            @include containerStyle();
-        
+           & .finder_logo .site_logo{
+                object-fit: contain;
+                width: 55px;
+                height: 60px;
+           }
+           & .finder_logo .idealist{
+                object-fit: contain;
+                width: 300px;
+                height: 50px;
+           }
+        }
+    }
+
+    .internship--programs{
+        margin-top: 8rem;
+        text-align: center;
+
+        &--title{
+            font-size: 70px;
+            font-weight: 900;
+            color: $primary-color;
+        }
+
+        &--list{
+            list-style: none;
+            line-height: 4ch;
+            text-align: left;
+            font-size: 30px;
+            margin-top: 3rem;
+            a {
+                color: #000000;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            a:hover{
+                color: $primary-color;
+            }
         }
     }
     
     .interns_ulm{
-        margin-top: 7rem;
+        margin-top: 10rem;
 
         .interns--title{
             text-align: center;
             font-size: map-get($font_size, large);
             font-weight: map-get($font_weight, bold);
             text-align: center;
+            color: $primary-color;
         }
         
         .interns--container{

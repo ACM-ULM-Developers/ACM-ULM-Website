@@ -1,10 +1,9 @@
 @mixin divStyle{
-    max-width: 50%;
-    margin: auto;
-    padding: 2rem;
-    border-style: solid;
-    border-radius: 40px;;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  width: 70%;
+  margin: 5em auto;
+  padding: 2rem;
+  border-radius: 20px;;
+  box-shadow: 0 0 20px 8px #d0d0d0;
 }
 
 .home{
@@ -13,10 +12,61 @@
         text-align: center;
         font-size: map-get($font-size, large);
         font-weight: map-get($font_weight, bold );
+        color: $primary-color;
     }
 
+    &--aboutACM  {
+      width: 600px;
+      height: auto;
+      background: #ffffff;
+      overflow: hidden;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 20px 8px #d0d0d0;
+      margin-bottom: 10rem;
+    }
+
+    &--aboutChapter{
+      width: 600px;
+      height: auto;
+      background: #ffffff;
+      overflow: hidden;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 20px 8px #d0d0d0;
+    }
+
+    .heading{
+      font-size: 50px;
+      text-align: center;
+      font-weight: bolder;
+      margin-bottom: 1.5rem;
+      color: $primary-color
+    }
+
+    .description{
+      line-height: 4ch;
+    }
+
+    &--courses{
+      // margin: 50px;
+    }
+
+    &--courses--title{
+      font-size: 70px;
+      font-weight: bolder;
+      text-align: center;
+      margin: 150px 0 50px 0;
+      color: $primary-color;
+    }
+
+    &--courses--course-chart{
+      margin: 0 auto;
+      width: 100%;
+      height: 700px;
+    }
     
-.section {
+  .section {
     display: none;
     padding: 2rem;
     
@@ -96,7 +146,17 @@
   
     &--medium {
       grid-row-end: span 2;
-      grid-column-end: span 2;
+      grid-column-end: span 2; 
+    }
+  
+    &--medium-1{
+      grid-row-end: span 2;
+      grid-column-end: span 2; 
+
+      @media screen and (max-width: 900px) {
+        grid-row-end: span 2;
+        grid-column-end: span 4;
+      }
     }
   
     &--large {

@@ -24,6 +24,7 @@ import DiscordCommunity from "./components/pages/DiscordCommunity";
 import ExecutiveMembers from "./components/pages/ExecutiveMembers";
 import Alumni from "./components/pages/Alumni";
 import Footer from './components/layout/footer';
+import Admin from './components/pages/Admin';
 import TopButton from './components/layout/TopButton';
 
 
@@ -36,10 +37,10 @@ export default function App(){
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/stuff" component={Stuff}/>
-            <Route path="/contact" component={CurrentEvents}/>
-            <Route path="/discordComm" component={DiscordCommunity}/>
+            <Route path="/currentEvents" component={CurrentEvents}/>
             <Route path="/executiveMem" component={ExecutiveMembers} />
             <Route path="/alumni" component={Alumni}/>
+            <Route path="/admin" component={Admin} />
           </div>
         </div>
         {/* <Footer /> */}

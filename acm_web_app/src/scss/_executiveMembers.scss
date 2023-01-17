@@ -2,6 +2,7 @@
     font-weight: map-get($font_weight, bold);
     font-size: map-get($font_size, large);
     text-align: center;
+    color: $primary-color;
 }
 
 .member_container{
