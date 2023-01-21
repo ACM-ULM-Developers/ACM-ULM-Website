@@ -1,89 +1,48 @@
-import React from "react"
-import {NavLink} from 'react-router-dom'
-import TopButton from './TopButton'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faFacebookF, faInstagram, faDiscord, faLinkedinIn, phone } from '@fortawesome/free-brands-svg-icons';
+import React from "react";
 
-export default function Footer(){   // exporting as 'Footer' with capital 'F'
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <span>
+          <b>ACM Student Chapter</b>
+        </span>
+        <p className="footer-description">
+          Association for Computing Machinery (ACM) at The University of
+          Louisiana at Monroe is a student organization that promotes student
+          involvement in the computing field. We host events throughout the year
+          to help students learn more about the computing field and to help them
+          network with other students and professionals in the field. We also
+          host events to help students learn more about the ACM organization and
+          how they can get involved.
+        </p>
+      </div>
+      <div className="footer-container">
+        <span>
+          <b>About Us</b>
+        </span>
+        <p className="footer-description">Careers</p>
+		<p className="footer-description">Our Team</p>
+		<p className="footer-description">Our Partners</p>
+		<p className="footer-description">Our Sponsors</p>
+		<p className="footer-description">Our History</p>
+		<p className="footer-description">Our Mission</p>
+      </div>
+      <div className="footer-container">
+        <span>
+          <b>Contact Us</b>
+        </span>
+        <p className="footer-description">
+          College of Business and Social Sciences, Hemphill Hall
+        </p>
+		<p className="footer-description">University of Louisiana at Monroe</p>
+		<p className="footer-description">700 University Avenue</p>
+		<p className="footer-description">Monroe, LA 71209</p>
+		<p className="footer-description">Phone: (318) 342-1540</p>
+		<p className="footer-description">Fax: (318) 342-1541</p>
+      </div>
+    </footer>
+  );
+};
 
-    return(
-            <div className="mainFooter">
-				<footer className="footer-distributed">
-				{/*<link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">*/}
-				<div className="footer-left">
-
-					<h3>ACM<span>logo</span></h3>
-
-					<p className="footer-links">
-						
-						<NavLink to ="/" className="link-1">Home</NavLink> <br />
-					
-						<NavLink to ="/stuff" className="link-1">Academics</NavLink> <br /> 
-					
-						<NavLink to ="/contact" className="link-1">Current Events</NavLink> <br />
-
-						<NavLink to ="/executiveMem" className="link-1">Executive Mmembers</NavLink> <br />
-						
-						<NavLink to ="/discordComm" className="link-1">Discord Channel</NavLink> <br />
-						
-						<NavLink to ="/alumni" className="link-1">Alumni</NavLink>
-					</p>
-
-					<p className="footer-company-name"> ULM ACM Chapters © date</p>
-				</div>
-
-				<div className="footer-center">
-
-					<div>
-						<i class="fa fa-map-marker"></i>
-						<p><span>700 University Ave</span> Monroe, LA</p>
-					</div>
-
-					<div>
-						<i class="fa fa-phone"></i>
-						<p>+111 111 1111</p>
-					</div>
-
-					<div className="ulm-logo-footer">
-						</div>
-
-				</div>
-
-				<div className="footer-right">
-
-					<p class="footer-company-about">
-						<span>Follow us on</span>
-						There are many ways to connect with us. To get more information, follow us on our social media pages.
-					</p>
-
-					<div className="footer-icons">
-
-					< a href ="https://facebook.com">
-					<FontAwesomeIcon icon={faFacebookF} />
-					</a>
-
-					< a href ="https://www.instagram.com/">
-					<FontAwesomeIcon icon={faInstagram} />
-					</a>
-
-					< a href ="https://www.linkedin.com">
-					<FontAwesomeIcon icon={faLinkedinIn} />
-					</a>
-
-					< a href ="https://discord.com/">
-					<FontAwesomeIcon icon={faDiscord} />
-					</a>
-
-					</div>
-
-				</div>
-				
-					<TopButton />
-					
-			</footer>     
-        </div>     
-
-    )
-
-
-}
+export default Footer;
