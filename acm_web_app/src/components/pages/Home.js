@@ -33,7 +33,7 @@ export default function Home() {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.3,
+      threshold: 0.05,
     };
     const observer = new IntersectionObserver(handleIntersect, options);
     divRefs.current.forEach((div) => observer.observe(div));
