@@ -11,9 +11,12 @@
 @import 'signupForm';
 @import 'formInput';
 @import 'currentEvents';
+@import 'admin';
 
 body {
     margin-top: 6rem;
     background: $primary-background-color;
     color: $text-color;
 }
+
+

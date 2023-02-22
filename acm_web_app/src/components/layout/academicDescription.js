@@ -209,7 +209,6 @@ export default function AcademicDescription(){
                         return(
                         <section className = "interns">
                             {/* <div className = "background_cover"></div> */}
-                            <img src = {intern.image} className = "interns--image"/>
                             <p className = "interns--name">{intern.name}</p>
                             <p className = "interns--classification">{intern.classification}</p>
                             <p className = "interns--position">{intern.position}</p>

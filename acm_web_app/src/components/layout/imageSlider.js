@@ -4,14 +4,14 @@ import { useState } from 'react';
 export default function ImageSlider(){
     
     const slides = [
-        { url: "http://localhost:3000/1.jpg", title: "1"},
-        { url: "http://localhost:3000/2.jpg", title: "2"},
-        { url: "http://localhost:3000/3.jpg", title: "3"},
-        { url: "http://localhost:3000/4.jpg", title: "4"},
-        { url: "http://localhost:3000/5.jpg", title: "5"},
-        { url: "http://localhost:3000/6.jpg", title: "6"},
-        { url: "http://localhost:3000/7.jpg", title: "7"},
-        { url: "http://localhost:3000/8.jpg", title: "8"},
+        { url: require("../../images/events/1.jpg"), title: "1"},
+        { url: require("../../images/events/2.jpg"), title: "2"},
+        { url: require("../../images/events/3.jpg"), title: "4"},
+        { url: require("../../images/events/4.jpg"), title: "3"},
+        { url: require("../../images/events/5.jpg"), title: "5"},
+        { url: require("../../images/events/6.jpg"), title: "6"},
+        { url: require("../../images/events/7.jpg"), title: "7"},
+        { url: require("../../images/events/8.jpg"), title: "8"},
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     

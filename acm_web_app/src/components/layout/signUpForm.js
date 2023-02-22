@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import FormInput from './formInput';
+import { useRef } from "react";
 
 export default function SignUp(){
     const [values, setValues] = useState({
@@ -9,6 +10,8 @@ export default function SignUp(){
         classification: "",
         email: "",
     });
+
+    const formRef = useRef(null);
 
     const inputs = [
         {
@@ -43,6 +46,16 @@ export default function SignUp(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        // formRef.current.reset();
+
+        // reset values
+        setValues({
+            firstName: "",
+            lastName: "",
+            classification: "",
+            email: "",
+        });
+        
     };
 
     const onChange = (e) => {
@@ -51,7 +64,7 @@ export default function SignUp(){
 
     return (
         <div className = "form_container">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} ref={formRef}>
                 <h1>Register</h1>
                 {inputs.map((input) => (
                     <FormInput
@@ -61,8 +74,10 @@ export default function SignUp(){
                         onChange={onChange}
                     />
                 ))}
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
+            <div>
+            </div>
         </div>
     );
 }
