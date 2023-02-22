@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import {Calendar, dateFnsLocalizer} from "react-big-calendar"
 import format from "date-fns/format"
 import parse from 'date-fns/parse'
@@ -22,10 +22,22 @@ const localizer = dateFnsLocalizer({
   locales,
 });
 
-function CurrentEvents({allEvents}) {
+function CurrentEvents() {
   // const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
-  // const [allEvents, setAllEvents] = useState([]);
-  console.log(allEvents);
+  const [allEvents, setAllEvents] = useState([]);
+  const getAllEvents = async () => {
+    const res =  await fetch(`http://127.0.0.1:8000/api/events/`);
+    const response  = await res.json();
+    return response;
+  }
+  
+  // useEffect(() => {
+  //   const getEvents = getAllEvents();
+  //   console.log(getEvents);
+  //   setAllEvents(getEvents);
+  //   console.log(allEvents);
+  // }, [])
+
   const containerStyles = {
     width: "1000px",
     height: "680px",
