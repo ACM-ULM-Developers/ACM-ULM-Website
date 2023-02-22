@@ -39,7 +39,6 @@ export default function App(){
             <Route path="/stuff" component={Stuff}/>
             <Route path="/currentEvents" component={CurrentEvents}/>
             <Route path="/executiveMem" component={ExecutiveMembers} />
-            <Route path="/alumni" component={Alumni}/>
             <Route path="/admin" component={Admin} />
           </div>
           <Footer/>

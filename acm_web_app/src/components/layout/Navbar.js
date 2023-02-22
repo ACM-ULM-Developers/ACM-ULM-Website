@@ -14,8 +14,6 @@ export default function Navbar(){
                 <li><NavLink to="/stuff"> ACADEMICS </NavLink></li>
                 <li><NavLink to="/currentEvents"> CURRENT EVENTS </NavLink></li>
                 <li><NavLink to="/executiveMem"> EXECUTIVE MEMBERS </NavLink></li>
-                {/* <li><NavLink to="/discordComm"> ULM DISCORD COMMUNITY </NavLink></li> */}
-                <li><NavLink to="/alumni"> CS ALUMNI </NavLink></li>
                 <li><NavLink to="/admin">ADMIN</NavLink></li>
             </ul>
         </div>
