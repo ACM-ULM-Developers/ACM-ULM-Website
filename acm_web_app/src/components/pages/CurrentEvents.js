@@ -104,11 +104,6 @@ function CurrentEvents() {
         </div>
       </div>
 
-
-      <div>
-        <p>Events description</p>
-      </div>
-
     </div>
   );
 }

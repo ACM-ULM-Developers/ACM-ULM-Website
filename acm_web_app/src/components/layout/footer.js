@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" style={{marginTop: "100px"}}>
       <div className="footer-container">
         <span>
           <b>ACM Student Chapter</b>
