@@ -37,15 +37,12 @@ export default function Home() {
     };
     const observer = new IntersectionObserver(handleIntersect, options);
     divRefs.current.forEach((div) => observer.observe(div));
-    return () => divRefs.current.forEach((div) => observer.unobserve(div));
   }, []);
 
   function handleIntersect(entries) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-      } else {
-        entry.target.classList.remove("visible");
       }
     });
   }
