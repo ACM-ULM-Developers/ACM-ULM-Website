@@ -28,6 +28,8 @@ export default function Home() {
     []
   );
 
+
+
   const divRefs = useRef([]);
   useEffect(() => {
     const options = {
@@ -48,7 +50,7 @@ export default function Home() {
   }
 
   return (
-    <div class="home">
+    <div class="home" style={{maxWidth: "1650px", margin: "0 auto"}}>
       <div className="home--title">
         Welcome to The ACM Student Chapter at ULM
       </div>
