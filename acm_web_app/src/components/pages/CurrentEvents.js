@@ -113,5 +113,5 @@ function CurrentEvents() {
   );
 }
 
-export default CurrentEvents
+export default CurrentEvents;
 

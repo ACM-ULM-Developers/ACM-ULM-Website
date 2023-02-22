@@ -206,3 +206,23 @@
         margin-bottom: 10px;
     }
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-div{
+  opacity: 0;
+}
+
+.animated-div.visible{
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out;
+}
